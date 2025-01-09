@@ -5,7 +5,7 @@ import Overview from './Overview';
 
 const App = () => {
   return (
-    <div className="h-screen pl-20 pr-20 bg-[#000000]">
+    <div className="h-screen bg-[#000000]">
       
       <Overview />
     </div>
