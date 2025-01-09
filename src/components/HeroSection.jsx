@@ -11,7 +11,7 @@ const HeroSection = () => {
         <Text
           size="3"
           weight="medium"
-          className="text-gray-400 uppercase tracking-wide"
+          className="text-gray-400 uppercase"
         >
           Monorepo support
         </Text>
@@ -20,7 +20,7 @@ const HeroSection = () => {
 
 
       <div className="mb-4">
-        <h1 className="text-5xl font-extrabold leading-tight tracking-tighter">
+        <h1 className="text-5xl font-extrabold">
           Build your component library
         </h1>
       </div>
@@ -60,49 +60,49 @@ const HeroSection = () => {
         <Tabs.List className="flex gap-4 border-b border-gray-700 pb-2">
           <Tabs.Trigger
             value="examples"
-            className="text-gray-400 hover:text-white text-sm focus:outline-none focus:ring-2 focus:ring-gray-600"
+            className="text-gray-400 hover:text-white text-sm"
           >
             Examples
           </Tabs.Trigger>
           <Tabs.Trigger
             value="mail"
-            className="text-gray-400 hover:text-white text-sm focus:outline-none focus:ring-2 focus:ring-gray-600"
+            className="text-gray-400 hover:text-white text-sm"
           >
             Mail
           </Tabs.Trigger>
           <Tabs.Trigger
             value="dashboard"
-            className="text-gray-400 hover:text-white text-sm focus:outline-none focus:ring-2 focus:ring-gray-600"
+            className="text-gray-400 hover:text-white text-sm"
           >
             Dashboard
           </Tabs.Trigger>
           <Tabs.Trigger
             value="tasks"
-            className="text-gray-400 hover:text-white text-sm focus:outline-none focus:ring-2 focus:ring-gray-600"
+            className="text-gray-400 hover:text-white text-sm"
           >
             Tasks
           </Tabs.Trigger>
           <Tabs.Trigger
             value="playground"
-            className="text-gray-400 hover:text-white text-sm focus:outline-none focus:ring-2 focus:ring-gray-600"
+            className="text-gray-400 hover:text-white text-sm"
           >
             Playground
           </Tabs.Trigger>
           <Tabs.Trigger
             value="forms"
-            className="text-gray-400 hover:text-white text-sm focus:outline-none focus:ring-2 focus:ring-gray-600"
+            className="text-gray-400 hover:text-white text-sm "
           >
             Forms
           </Tabs.Trigger>
           <Tabs.Trigger
             value="music"
-            className="text-gray-400 hover:text-white text-sm focus:outline-none focus:ring-2 focus:ring-gray-600"
+            className="text-gray-400 hover:text-white text-sm"
           >
             Music
           </Tabs.Trigger>
           <Tabs.Trigger
             value="authentication"
-            className="text-gray-400 hover:text-white text-sm focus:outline-none focus:ring-2 focus:ring-gray-600"
+            className="text-gray-400 hover:text-white text-sm"
           >
             Authentication
           </Tabs.Trigger>
