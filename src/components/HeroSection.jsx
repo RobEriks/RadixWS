@@ -5,7 +5,7 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 const HeroSection = () => {
   return (
-    <section className="bg-[#000] text-white px-8 py-16 border-b border-gray-700">
+    <section className="bg-[#000] border-t text-white px-8 py-16 border-b border-gray-700">
 
       <Flex align="center" gap="2" className="mb-6">
         <Text
@@ -56,57 +56,58 @@ const HeroSection = () => {
       </Flex>
 
 
-      <Tabs.Root defaultValue="examples" className="mt-10">
-        <Tabs.List className="flex gap-4 border-b border-gray-700 pb-2">
-          <Tabs.Trigger
-            value="examples"
-            className="text-gray-400 hover:text-white text-sm"
-          >
-            Examples
-          </Tabs.Trigger>
-          <Tabs.Trigger
-            value="mail"
-            className="text-gray-400 hover:text-white text-sm"
-          >
-            Mail
-          </Tabs.Trigger>
-          <Tabs.Trigger
-            value="dashboard"
-            className="text-gray-400 hover:text-white text-sm"
-          >
-            Dashboard
-          </Tabs.Trigger>
-          <Tabs.Trigger
-            value="tasks"
-            className="text-gray-400 hover:text-white text-sm"
-          >
-            Tasks
-          </Tabs.Trigger>
-          <Tabs.Trigger
-            value="playground"
-            className="text-gray-400 hover:text-white text-sm"
-          >
-            Playground
-          </Tabs.Trigger>
-          <Tabs.Trigger
-            value="forms"
-            className="text-gray-400 hover:text-white text-sm "
-          >
-            Forms
-          </Tabs.Trigger>
-          <Tabs.Trigger
-            value="music"
-            className="text-gray-400 hover:text-white text-sm"
-          >
-            Music
-          </Tabs.Trigger>
-          <Tabs.Trigger
-            value="authentication"
-            className="text-gray-400 hover:text-white text-sm"
-          >
-            Authentication
-          </Tabs.Trigger>
-        </Tabs.List>
+      <Tabs.Root defaultValue="examples" className="mt-10 border-t border-gray-700 pt-4">
+      <Tabs.List className="flex gap-4 border-b border-gray-700 pb-4">
+  <Tabs.Trigger
+    value="examples"
+    className="text-gray-400 hover:text-white text-sm px-4 py-2 rounded-full data-[state=active]:bg-gray-800 data-[state=active]:text-white"
+  >
+    Examples
+  </Tabs.Trigger>
+  <Tabs.Trigger
+    value="mail"
+    className="text-gray-400 hover:text-white text-sm px-4 py-2 rounded-full data-[state=active]:bg-gray-800 data-[state=active]:text-white"
+  >
+    Mail
+  </Tabs.Trigger>
+  <Tabs.Trigger
+    value="dashboard"
+    className="text-gray-400 hover:text-white text-sm px-4 py-2 rounded-full data-[state=active]:bg-gray-800 data-[state=active]:text-white"
+  >
+    Dashboard
+  </Tabs.Trigger>
+  <Tabs.Trigger
+    value="tasks"
+    className="text-gray-400 hover:text-white text-sm px-4 py-2 rounded-full data-[state=active]:bg-gray-800 data-[state=active]:text-white"
+  >
+    Tasks
+  </Tabs.Trigger>
+  <Tabs.Trigger
+    value="playground"
+    className="text-gray-400 hover:text-white text-sm px-4 py-2 rounded-full data-[state=active]:bg-gray-800 data-[state=active]:text-white"
+  >
+    Playground
+  </Tabs.Trigger>
+  <Tabs.Trigger
+    value="forms"
+    className="text-gray-400 hover:text-white text-sm px-4 py-2 rounded-full data-[state=active]:bg-gray-800 data-[state=active]:text-white"
+  >
+    Forms
+  </Tabs.Trigger>
+  <Tabs.Trigger
+    value="music"
+    className="text-gray-400 hover:text-white text-sm px-4 py-2 rounded-full data-[state=active]:bg-gray-800 data-[state=active]:text-white"
+  >
+    Music
+  </Tabs.Trigger>
+  <Tabs.Trigger
+    value="authentication"
+    className="text-gray-400 hover:text-white text-sm px-4 py-2 rounded-full data-[state=active]:bg-gray-800 data-[state=active]:text-white"
+  >
+    Authentication
+  </Tabs.Trigger>
+</Tabs.List>
+        
 
         <Box pt="3">
           <Tabs.Content value="examples">
