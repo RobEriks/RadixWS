@@ -131,28 +131,76 @@ const Dashboard = () => {
         )}
       </div>
     </div>
-    <div>
-    <Box maxWidth="240px">
-	<Card>
-		<Flex gap="3" align="center">
-			<Avatar
-				size="3"
-				src="https://images.unsplash.com/photo-1607346256330-dee7af15f7c5?&w=64&h=64&dpr=2&q=70&crop=focalpoint&fp-x=0.67&fp-y=0.5&fp-z=1.4&fit=crop"
-				radius="full"
-				fallback="T"
-			/>
-			<Box>
-				<Text as="div" size="2" weight="bold">
-					Teodros Girmay
-				</Text>
-				<Text as="div" size="2" color="gray">
-					Engineering
-				</Text>
-			</Box>
-		</Flex>
-	</Card>
-</Box>
-</div>
+   
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-6">
+        <Box>
+          <Card className="bg-gray-800 p-6 rounded-lg">
+            <Flex justify="between" align="center">
+              <Text as="div" size="2" weight="bold">
+                Total Revenue
+              </Text>
+              <span>$</span>
+            </Flex>
+            <Text as="div" size="4" weight="bold" className="mt-4">
+              $45,231.89
+            </Text>
+            <Text as="div" size="2" color="gray" className="mt-2">
+              +20.1% from last month
+            </Text>
+          </Card>
+        </Box>
+
+        <Box className="bg-black">
+          <Card className="bg-gray-800 p-6 rounded-lg">
+            <Flex justify="between" align="center">
+              <Text as="div" size="2" weight="bold">
+                Subscriptions
+              </Text>
+              <span className="text-gray-400">👥</span>
+            </Flex>
+            <Text as="div" size="4" weight="bold" className="mt-4">
+              +2350
+            </Text>
+            <Text as="div" size="2" color="gray" className="mt-2">
+              +180.1% from last month
+            </Text>
+          </Card>
+        </Box>
+
+        <Box>
+          <Card className="bg-gray-800 p-6 rounded-lg">
+            <Flex justify="between" align="center">
+              <Text as="div" size="2" weight="bold">
+                Sales
+              </Text>
+              <span className="text-gray-400">📄</span>
+            </Flex>
+            <Text as="div" size="4" weight="bold" className="mt-4">
+              +12,234
+            </Text>
+            <Text as="div" size="2" color="gray" className="mt-2">
+              +19% from last month
+            </Text>
+          </Card>
+        </Box>
+
+        <Box>
+          <Card className="bg-gray-800 p-6 rounded-lg">
+            <Flex justify="between" align="center">
+              <Text as="div" size="2" weight="bold">
+                Active Now
+              </Text>
+              <span className="text-gray-400">📈</span>
+            </Flex>
+            <Text as="div" size="4" weight="bold" className="mt-4">
+              +573
+            </Text>
+            <Text as="div" size="2" color="gray" className="mt-2">
+              +201 since last hour
+            </Text>
+          </Card>
+        </Box>
+      </div>
       </div>
     </div>
   );

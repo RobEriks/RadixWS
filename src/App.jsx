@@ -7,7 +7,9 @@ const App = () => {
   return (
     <div className="h-screen bg-[#000000]">
       
-      <Overview />
+      <div className="max-w-7xl mx-auto">
+        <Overview />
+      </div>
     </div>
 
 
