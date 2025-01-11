@@ -6,11 +6,8 @@ import Dashboard from "./components/Dashboard";
 
 const Overview = () => {
   return (
-    <div className="h-screen bg-[#000000] text-white">
-      <Menu />
-      <HeroSection />
-      <Dashboard />
-      {/* Kommentar <Chart />*/}
+    <div className="h-screen w-full bg-[#000000] ">
+      
       
 
         
