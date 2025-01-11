@@ -11,10 +11,10 @@ const App = () => {
   return (
     <div className="h-full w-full bg-[#000000]">
       
-      <div className="max-w-7xl mx-auto">
+      <div className="">
         <Menu />
               <HeroSection />
-              <Dashboard />
+              <Overview />
               {/* <Chart />*/}
       </div>
     </div>

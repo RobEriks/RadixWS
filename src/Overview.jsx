@@ -6,9 +6,9 @@ import Dashboard from "./components/Dashboard";
 
 const Overview = () => {
   return (
-    <div className="h-screen w-full bg-[#000000] ">
+    <div className="max-w-7xl mx-auto">
       
-      
+      <Dashboard />
 
         
 
