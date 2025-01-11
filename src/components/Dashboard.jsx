@@ -12,6 +12,8 @@ import {
 import { Avatar } from "@radix-ui/react-avatar";
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import { Box, Card, Flex, Text, Button } from "@radix-ui/themes";
+import Cards from "./Cards";
+import Table from "./Table";
 
 const Dashboard = () => {
   return (
@@ -20,7 +22,7 @@ const Dashboard = () => {
         <div className="flex items-center gap-4">
           <DropdownMenu>
             <DropdownMenuTrigger>
-              <button className="flex items-center gap-2 bg-gray-800 px-3 py-2 rounded-lg hover:bg-gray-700">
+              <button className="flex items-center gap-2 bg-[#121216] px-3 py-2 rounded-lg hover:bg-gray-700">
                 <span>Alicia Koch</span>
                 <svg
                   width="15"
@@ -121,8 +123,8 @@ const Dashboard = () => {
               key={index}
               className={`px-4 py-2 rounded-lg ${
                 tab === "Overview"
-                  ? "bg-gray-700 text-white"
-                  : "text-gray-400 hover:bg-gray-700 hover:text-white"
+                  ? "bg-[#121216] text-white"
+                  : "text-gray-400"
               }`}
             >
               {tab}
@@ -131,77 +133,10 @@ const Dashboard = () => {
         )}
       </div>
     </div>
-   
-    <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-6">
-        <Box>
-          <Card className="bg-gray-800 p-6 rounded-lg">
-            <Flex justify="between" align="center">
-              <Text as="div" size="2" weight="bold">
-                Total Revenue
-              </Text>
-              <span>$</span>
-            </Flex>
-            <Text as="div" size="4" weight="bold" className="mt-4">
-              $45,231.89
-            </Text>
-            <Text as="div" size="2" color="gray" className="mt-2">
-              +20.1% from last month
-            </Text>
-          </Card>
-        </Box>
-
-        <Box className="bg-black">
-          <Card className="bg-gray-800 p-6 rounded-lg">
-            <Flex justify="between" align="center">
-              <Text as="div" size="2" weight="bold">
-                Subscriptions
-              </Text>
-              <span className="text-gray-400">👥</span>
-            </Flex>
-            <Text as="div" size="4" weight="bold" className="mt-4">
-              +2350
-            </Text>
-            <Text as="div" size="2" color="gray" className="mt-2">
-              +180.1% from last month
-            </Text>
-          </Card>
-        </Box>
-
-        <Box>
-          <Card className="bg-gray-800 p-6 rounded-lg">
-            <Flex justify="between" align="center">
-              <Text as="div" size="2" weight="bold">
-                Sales
-              </Text>
-              <span className="text-gray-400">📄</span>
-            </Flex>
-            <Text as="div" size="4" weight="bold" className="mt-4">
-              +12,234
-            </Text>
-            <Text as="div" size="2" color="gray" className="mt-2">
-              +19% from last month
-            </Text>
-          </Card>
-        </Box>
-
-        <Box>
-          <Card className="bg-gray-800 p-6 rounded-lg">
-            <Flex justify="between" align="center">
-              <Text as="div" size="2" weight="bold">
-                Active Now
-              </Text>
-              <span className="text-gray-400">📈</span>
-            </Flex>
-            <Text as="div" size="4" weight="bold" className="mt-4">
-              +573
-            </Text>
-            <Text as="div" size="2" color="gray" className="mt-2">
-              +201 since last hour
-            </Text>
-          </Card>
-        </Box>
+    <Cards />
+    <Table />
       </div>
-      </div>
+      
     </div>
   );
 };
