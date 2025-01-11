@@ -5,6 +5,7 @@ import Menu from "./components/Menu";
 import Chart from "./components/Chart";
 import HeroSection from "./components/HeroSection";
 import Dashboard from "./components/Dashboard"; 
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
               <HeroSection />
               <Overview />
               {/* <Chart />*/}
+              <Footer />
       </div>
     </div>
 

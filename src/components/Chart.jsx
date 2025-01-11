@@ -19,6 +19,7 @@ const data = [
 const Chart = () => {
   return (
     <div className="bg-[#000] text-white p-4 rounded-lg">
+      <h1 className="mb-5 ml-5">Overview</h1>
       <ResponsiveContainer width="100%" height={350}>
         <BarChart data={data}>
           <XAxis

@@ -14,6 +14,7 @@ import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import { Box, Card, Flex, Text, Button } from "@radix-ui/themes";
 import Cards from "./Cards";
 import Table from "./Table";
+import Chart from "./Chart";
 
 const Dashboard = () => {
   return (
@@ -134,7 +135,15 @@ const Dashboard = () => {
       </div>
     </div>
     <Cards />
-    <Table />
+    <div className="flex flex-row gap-4 mt-8">
+      <div className="flex-1">
+      <Chart />
+      </div>
+        <div className="flex-2">
+        <Table />
+        </div>
+        
+    </div>
       </div>
       
     </div>
